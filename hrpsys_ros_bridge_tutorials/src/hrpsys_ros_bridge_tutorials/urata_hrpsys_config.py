@@ -635,7 +635,6 @@ class URATAHrpsysConfigurator(HrpsysConfigurator):
         self.kf_svc.setKalmanFilterParam(kfp)
         # st setting
         stp=self.st_svc.getParameter()
-        #stp.st_algorithm=OpenHRP.StabilizerService.EEFMQPCOP
         stp.st_algorithm=OpenHRP.StabilizerService.EEFM
         stp.k_brot_p=[0, 0]
         stp.k_brot_tc=[1000, 1000]
